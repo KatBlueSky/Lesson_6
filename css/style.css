@@ -1,0 +1,412 @@
+/* &display=swap */
+@import "null.css";
+/* ================================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Lato:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@100;400;700;900&display=swap");
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+/* ================================================================ */
+/*  НАЧНУ  с свойства border */
+body {
+	background-color: rgb(79, 58, 173);
+	color: aliceblue;
+	font-size: 18px;
+	font-family: "Roboto", Arial, serif;
+	font-weight: 400;
+	line-height: 1.25;
+}
+
+h1 {
+	margin: 100px 0px 50px 0px;
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	font-size: 50px;
+}
+
+.inline {
+	margin: 0px 0px 50px 0px;
+	padding: 20px;
+	/*  В основном это печалька, но в качестве эксеримента может быть использовано в дизайне*/
+	/* Эксперимент, так граница НЕ будет ити под каждой строкой!!А border будет по границе контейнера */
+	display: inline-block;
+	border-top: 15px solid rgb(229, 241, 50);
+	border-right: 10px solid rgb(233, 118, 24);
+	border-bottom: 5px solid rgb(241, 58, 58);
+	border-left: 7px solid rgb(172, 70, 70);
+
+	/* background-color: rgb(178, 236, 121);
+	border: 2px dotted #000; */
+	/* Эксперимент */
+	/* background-color: rgb(231, 110, 156);*/
+	/* border-bottom:  4px dotted rgb(102, 14, 129);
+	line-height: 165%;  */
+}
+
+.inline-block-systemfoto {
+	margin: 0px 0px 50px 0px;
+	max-width: 800px;
+	border: 10px solid rgb(209, 172, 9);
+}
+
+.link-sun {
+	font-weight: 700;
+	font-size: 25px;
+	font-family: "Comforter", Arial, serif;
+	letter-spacing: 5px;
+}
+
+.block {
+	margin: 0px 0px 50px 0px;
+	max-width: 700px;
+	padding: 15px;
+	/* ! Экспеименты со стронами блока и border */
+	border-top: 15px solid rgb(229, 241, 50);
+	border-right: 10px solid rgb(233, 118, 24);
+	border-bottom: 5px solid rgb(241, 58, 58);
+	border-left: 7px solid rgb(172, 70, 70);
+	/* border-top: 10px solid rgb(0, 0, 0); */
+}
+
+/* ! Пример со  стилем border  solid. Универсальное свойство для всех сторон сразу*/
+.block-border-solid {
+	max-width: 600px;
+	margin: 0px 0px 50px 500px;
+	padding: 15px;
+	/* padding: 15px; */
+	border: 20px solid rgb(251, 114, 22);
+	/*Пример со  border  solid с border-radius!!!*/
+	border-radius: 20px;
+}
+
+.list-sun {
+	padding: 10px 0px 0px 40px;
+	font-weight: 100;
+}
+
+ul > li {
+	padding: 0px 0px 5px 0px;
+}
+
+/*  ! Пример со  стилем border dotted*/
+.block-border-dotted {
+	max-width: 700px;
+	margin: 0px 0px 50px 0px;
+	padding: 15px;
+	border: 10px dotted rgb(243, 246, 30);
+}
+
+/*! Пример со  стилем border dashed*/
+.block-border-dashed {
+	max-width: 600px;
+	padding: 15px;
+	margin: 0px 0px 50px 500px;
+	border: 10px dashed rgb(248, 102, 18);
+}
+
+h2 {
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 1;
+	padding: 0px 0px 10px 0px;
+}
+
+/* ! Пример со  стилем border double*/
+.block-border-double {
+	max-width: 700px;
+	margin: 0px 0px 50px 0px;
+	padding: 15px;
+	border: 10px double rgb(124, 240, 16);
+}
+
+/*! Пример со  стилем border transparent*/
+.block-border-transparent {
+	max-width: 600px;
+	margin: 0px 0px 50px 500px;
+	background-color: rgb(199, 127, 154);
+	padding: 15px;
+	border: 15px transparent rgb(255, 239, 17);
+}
+
+/* ! Пример 3 одинаковые стророны, а одна другая */
+.block-border-color-side {
+	max-width: 700px;
+	margin: 0px 0px 50px 0px;
+	padding: 15px;
+	border: 10px solid rgb(253, 139, 45);
+	border-top: 10px dotted rgb(243, 239, 26);
+}
+
+.link {
+	margin: 0px 0px 50px 0px;
+	padding: 15px;
+	font-size: 25px;
+	font-family: "Comforter", Arial, serif;
+	letter-spacing: 5px;
+	/*! В основном это печалька, но в качестве эксеримента может быть использовано в дизайне*/
+	background-color: rgb(231, 110, 156);
+	border-bottom: 10px dotted rgb(102, 14, 129);
+	/*border-bottom:  10px dashed rgb(102, 14, 129); */
+}
+
+.inline-block-foto-color-side {
+	margin: 50px 0px;
+	max-width: 800px;
+	border: 10px solid rgb(209, 172, 9);
+}
+
+/* Итак тепер border-radius */
+.block-2 {
+	max-width: 600px;
+	padding: 20px;
+	margin: 0px 0px 50px 0px;
+	font-weight: 700;
+	background-color: rgb(212, 73, 26);
+	border-radius: 10px 20px 10px 20px;
+	/* или для всех углов */
+	border-radius: 35px;
+	/* Эксперимент border-radius от ширины блока
+	border-radius: 10% 30% 10% 30%; */
+	/* Эксперимент border-radius от ширины блока
+	border-radius: 10% 30% 10% 30%/ 10% 30% 10% 30%  ; 
+	Закругленны только два угла
+	border-radius: 0 25px;*/
+}
+
+ul.list-2 {
+	font-weight: 100;
+}
+
+.list-2 {
+	padding: 10px 0px 0px 40px;
+}
+
+.block-generator {
+	max-width: 700px;
+	padding: 15px;
+	margin: 0px 0px 50px 500px;
+	background-color: darksalmon;
+	border-radius: 20px 50px 20px 50px;
+	/* или для всех углов */
+	/* Эксперимент border-radius от ширины блока
+	border-radius: 10% 30% 10% 30%; */
+	/* Эксперимент border-radius от ширины блока Размеры взяты с ренератора!!!
+	border-radius: 10% 30% 10% 30%/ 10% 30% 10% 30%  ; */
+}
+
+.inline-2 {
+	border-radius: 30px;
+	background-color: rgb(231, 78, 251);
+}
+
+/* .inline-block-image-2 { 
+	 Эксмериментирую 
+	 Хочу сдеолать картинку круглой, плохой ваиант. Лутче добавить блок и работать с ним */
+/* max-width: 300px;
+	height: 300px;
+	border-radius:50%;  
+	Хочу сделать картинку овальной 
+	border-radius: 550px;  
+	} */
+
+.inline-block-image-2-1 {
+	/* Видно кусочек картинки, потому что картинка большая, мы ограничиваем только родитель */
+	margin: 50px 0px 0px 0px;
+	border-radius: 50%;
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	box-shadow: 5px 5px 10px 20px rgb(239, 250, 188), -5px -15px 10px 20px rgb(250, 163, 24);
+}
+
+.inline-block-image-2-2 {
+	margin: -200px 0px 0px 700px;
+	border-radius: 50%;
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	box-shadow: 5px 5px 10px 20px rgb(239, 250, 188), -5px -15px 10px 20px rgb(250, 163, 24);
+}
+
+.inline-block-image-2-3 {
+	margin: 50px 0px 0px 0px;
+	border-radius: 50%;
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	box-shadow: 5px 5px 10px 20px rgb(239, 250, 188), -5px -15px 10px 20px rgb(250, 163, 24);
+}
+
+.inline-block-image-2-4 {
+	margin: -200px 0px 100px 700px;
+	border-radius: 50%;
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	box-shadow: 5px 5px 10px 20px rgb(239, 250, 188), -5px -15px 10px 20px rgb(250, 163, 24);
+}
+
+.block-3 {
+	max-width: 700px;
+	padding: 15px;
+	margin: 0px 0px 50px 0px;
+	/* Это обводка, только обводка!! */
+	outline: 15px solid rgb(235, 33, 33);
+	border-radius: 15px;
+}
+
+.inline-3 {
+	/* Это обводка строчный тег!! */
+	padding: 15px;
+	outline: 5px solid rgb(248, 57, 184);
+}
+
+.block-4-opacity {
+	max-width: 500px;
+	margin: 100px 0px 50px 0px;
+	padding: 15px;
+	box-shadow: 10px 10px 10px 10px rgb(241, 136, 37), -10px -10px 10px 10px rgb(251, 253, 115);
+	/* box-shadow: inset 5px 5px 5px 10px rgb(139, 218, 65); */
+	border-radius: 10px;
+}
+
+.block-4-opacity-inset {
+	max-width: 500px;
+	margin: 0px 0px 50px 0px;
+	padding: 15px;
+	box-shadow: inset 5px 5px 5px 10px rgb(240, 250, 103);
+	border-radius: 10px;
+}
+
+.block-inline-4 {
+	/* Экспериментирую с строчно-блочным элементом */
+	border: 5px solid rgb(239, 255, 167);
+	box-shadow: 10px 10px 10px 10px rgb(239, 255, 167), -10px -10px 10px 10px rgb(243, 240, 37);
+	/* box-shadow: inset 5px 5px 5px 10px rgb(139, 218, 65);  */
+	border-radius: 10px;
+}
+
+/*.inline-4{  */
+/* Экспериментирую с строчно  элементом  span */
+/*border: 5px solid rgb(239, 255, 167);
+	box-shadow: 10px 10px 10px 10px rgb(239, 255, 167), -10px -10px 10px 10px rgb(243, 240, 37);
+	box-shadow: inset 5px 5px 5px 10px rgb(139, 218, 65);  
+ 	border-radius: 10px;  */
+/* }  */
+
+.block-opacity-5 {
+	/* Прозрачность 20% */
+	max-width: 700px;
+	margin: 100px 0px 50px 0px;
+	opacity: 0.2;
+	background-color: rgb(255, 5, 242);
+}
+
+.block-opacity-6 {
+	/* Прозрачность 50%*/
+	max-width: 700px;
+	margin: 0px 0px 50px 0px;
+	opacity: 0.5;
+	background-color: rgb(255, 5, 242);
+}
+
+.block-opacity-7 {
+	/* Прозрачность 100%*/
+	max-width: 700px;
+	margin: 0px 0px 50px 0px;
+	opacity: 1;
+	background-color: rgb(255, 5, 242);
+}
+
+.block-visability-1 {
+	/* Место за обьектом остается, оно пустое, но он там внутри, и мы не можем взаимодействовать с ним!!!*/
+	max-width: 700px;
+	margin: 0px 0px 50px 500px;
+	visibility: hidden;
+	background-color: rgb(0, 255, 255);
+}
+
+.block-visability-2 {
+	/* мы можем работать с обьектом, даже если он полностью прозрачен*/
+	max-width: 700px;
+	margin: 0px 0px 50px 500px;
+	opacity: 0.3;
+	background-color: rgb(255, 208, 0);
+}
+
+.block-visability-3 {
+	/* Скрылось все, как будто мы все убрали из html. Не можно рабоать с обьектом!!! */
+	/* display: none; */
+	max-width: 700px;
+	margin: 0px 0px 50px 500px;
+	background-color: rgb(255, 0, 51);
+}
+
+.inline-7 {
+	font-family: "Comforter", serif;
+	font-size: 25px;
+	/* Скрить обьект. Я скрыла ссылку!! */
+	visibility: hidden;
+}
+
+/* <!-- Просто эксперимент з прозрачностью цвета теста в span --> */
+.block-span-opacity {
+	text-align: justify;
+}
+
+.inline-opacity-1,
+.inline-opacity-2,
+.inline-opacity-3,
+.inline-opacity-4,
+.inline-opacity-5 {
+	color: chartreuse;
+	font-size: 25px;
+}
+
+.inline-opacity-1 {
+	opacity: 0.1;
+}
+
+.inline-opacity-2 {
+	opacity: 0.3;
+}
+
+.inline-opacity-3 {
+	opacity: 0.5;
+}
+
+.inline-opacity-4 {
+	opacity: 0.7;
+}
+
+.inline-opacity-5 {
+	opacity: 0.9;
+}
+
+.button,
+.button-2 {
+	margin: 50px 0px 50px 0px;
+	padding: 25px;
+	max-width: 300px;
+	min-height: 70px;
+	background-color: #ff7f50;
+	color: rgb(75, 3, 143);
+	font-size: 30px;
+	font-weight: 900;
+	text-align: center;
+	border-radius: 50px;
+	box-shadow: 2px 2px 20px 10px #ff7f50;
+}
+
+.button-2 {
+	margin: -140px 0px 50px 710px;
+}
